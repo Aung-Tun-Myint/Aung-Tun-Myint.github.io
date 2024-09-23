@@ -1,4 +1,7 @@
+import webbrowser
 
+# Resume content
+resume_html = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -142,7 +145,7 @@
             <ul>
                 <li>Demonstrated exceptional problem-solving skills under time constraints.</li>
                 <li>Collaborated with a team to solve complex algorithmic challenges.</li>
-                <li><a href="https://www.miit.edu.mm/my/news/myanmar-collegiate-programming-contest-2019" class="custom-link">MCPC 2019</a></li>
+                <li><a href="https://www.miit.edu.mm/my/news/myanmar-collegiate-programming-contest-2019" class="custom-link" target="_blank" rel="noopener noreferrer">MCPC 2019</a></li>
             </ul>
     </ul>
 
@@ -152,7 +155,7 @@
             <ul>
                 <li>Participated in coding challenges.</li>
                 <li>Mentored junior students in programming and algorithm development.</li>
-                <li><a href="https://www.miit.edu.mm/my/news/codemutants-2024" class="custom-link">CodeMutants 2024</a></li>
+                <li><a href="https://www.miit.edu.mm/my/news/codemutants-2024" class="custom-link" target="_blank" rel="noopener noreferrer">CodeMutants 2024</a></li>
             </ul>
         </li>
         <li><strong>Volunteer Work</strong>
@@ -171,7 +174,7 @@
         <li><strong>Introduction to Project Management, Coursera</strong></li>
         <li><strong>Retrieve Data using Single-Table SQL Queries, Coursera</strong></li>
         <li><strong>Introduction to HTML5, University of Michigan</strong></li>
-        <li><strong>Programming Fundamentals</strong>, Duke University</li>
+        <li><strong>Programming Fundamentals, Duke University</strong></li>
     </ul>
 
     <h2>Languages</h2>
@@ -193,3 +196,13 @@
     </p>
 </body>
 </html>
+'''
+
+# Write the resume to an HTML file
+with open('resume.html', 'w', encoding='utf-8') as file:
+    file.write(resume_html)
+
+print("Resume generated successfully as 'resume.html'.")
+
+# Open the resume in the default web browser
+webbrowser.open('resume.html')
