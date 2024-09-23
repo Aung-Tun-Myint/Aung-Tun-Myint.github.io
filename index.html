@@ -1,7 +1,4 @@
-import webbrowser
 
-# Resume content
-resume_html = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -198,13 +195,3 @@ resume_html = '''
     </p>
 </body>
 </html>
-'''
-
-# Write the resume to an HTML file
-with open('resume.html', 'w', encoding='utf-8') as file:
-    file.write(resume_html)
-
-print("Resume generated successfully as 'resume.html'.")
-
-# Open the resume in the default web browser
-webbrowser.open('resume.html')
